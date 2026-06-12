@@ -78,38 +78,12 @@ select {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
 }
 
-.brand-mark {
-  width: 54px;
-  height: 54px;
-  border-radius: 14px;
-  display: grid;
-  place-items: center;
-  color: #ffffff;
-  background: linear-gradient(135deg, var(--navy), var(--navy-dark));
-  box-shadow: 0 12px 24px rgba(20, 39, 104, .18);
-  font-weight: 950;
-  letter-spacing: -0.04em;
-}
-
-.brand-text {
-  display: grid;
-  line-height: 1.05;
-}
-
-.brand-text strong {
-  color: var(--navy-dark);
-  font-size: 18px;
-  font-weight: 950;
-}
-
-.brand-text span {
-  color: var(--red);
-  font-size: 12px;
-  font-weight: 950;
-  letter-spacing: .18em;
+.brand img {
+  display: block;
+  width: 190px;
+  height: auto;
 }
 
 .links {
@@ -248,7 +222,7 @@ h1 span {
 
 .trust-row {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
   margin-top: 30px;
   max-width: 760px;
@@ -433,13 +407,28 @@ h1 span {
    CONTACT
    ========================================================= */
 
+.team-section {
+  background: #ffffff;
+}
+
+.team-section .about-hero {
+  margin-bottom: 32px;
+}
+
+.team-grid {
+  max-width: 1120px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 0 auto;
+  align-items: stretch;
+}
+
 .contact-section {
-  padding-top: 32px;
+  padding-top: 64px;
 }
 
 .contact-layout {
   display: grid;
-  grid-template-columns: minmax(0, .9fr) minmax(420px, 1.1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 28px;
   align-items: start;
 }
@@ -450,8 +439,6 @@ h1 span {
   border-radius: 24px;
   padding: 34px;
   box-shadow: var(--shadow);
-  position: sticky;
-  top: 112px;
 }
 
 .contact-copy .eyebrow,
@@ -489,17 +476,15 @@ h1 span {
   color: rgba(255, 255, 255, .80);
 }
 
-.contact-form {
+.brokerage-details {
   background: #ffffff;
   border: 1px solid var(--line);
   border-radius: 24px;
   padding: 30px;
   box-shadow: var(--shadow);
-  display: grid;
-  gap: 14px;
 }
 
-.form-header h3 {
+.brokerage-details h3 {
   margin: 0;
   color: var(--navy-dark);
   font-size: 30px;
@@ -507,62 +492,42 @@ h1 span {
   letter-spacing: -.04em;
 }
 
-.form-header p {
+.brokerage-details > p {
   margin: 8px 0 4px;
   color: var(--muted);
 }
 
-.two {
+.company-license-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
+  margin-top: 22px;
 }
 
-label {
+.company-license-grid div {
   display: grid;
-  gap: 6px;
-  color: var(--ink);
-  font-size: 13px;
-  font-weight: 900;
-}
-
-input,
-textarea,
-select {
-  width: 100%;
+  gap: 4px;
   border: 1px solid var(--line);
-  border-radius: 10px;
-  padding: 13px 14px;
-  background: #fbfdff;
-  color: var(--ink);
-  outline: none;
+  border-radius: 14px;
+  padding: 15px;
+  background: #f7faff;
 }
 
-textarea {
-  min-height: 130px;
-  resize: vertical;
+.company-license-grid strong {
+  color: var(--navy-dark);
 }
 
-input:focus,
-textarea:focus,
-select:focus {
-  border-color: var(--navy);
-  box-shadow: 0 0 0 3px rgba(38, 60, 145, .12);
-}
-
-.submit {
-  min-height: 52px;
-  border: 0;
-  border-radius: 10px;
-  background: linear-gradient(135deg, var(--red), var(--red-dark));
-  color: white;
+.company-license-grid span {
+  color: var(--muted);
   font-weight: 950;
-  cursor: pointer;
-  box-shadow: 0 14px 28px rgba(241, 24, 43, .22);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform .18s ease, filter .18s ease;
+}
+
+.brokerage-details .credentials {
+  margin-top: 20px;
+  border-top: 1px solid var(--line);
+  padding-top: 18px;
+  font-weight: 900;
+  color: var(--navy-dark);
 }
 
 /* =========================================================
@@ -687,7 +652,50 @@ select:focus {
   display: grid;
   grid-template-rows: auto auto auto 1fr auto;
   gap: 14px;
-  min-height: 410px;
+  min-height: 585px;
+}
+
+.owner-card {
+  border-color: rgba(241, 24, 43, .28);
+  background: #fffdfd;
+}
+
+.owner-card-photo {
+  width: 100%;
+  height: 285px;
+  border-radius: 14px;
+  object-fit: cover;
+  object-position: center 24%;
+}
+
+.compact-licenses {
+  gap: 3px;
+  font-size: 12px;
+}
+
+.license-list {
+  display: grid;
+  gap: 5px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.license-list strong {
+  color: var(--navy-dark);
+  font-size: 14px;
+}
+
+.bio-license-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #f7faff;
+}
+
+.bio-license-list strong {
+  grid-column: 1 / -1;
 }
 
 .agent-top {
@@ -715,6 +723,10 @@ select:focus {
   box-shadow: 0 12px 26px rgba(20, 39, 104, 0.14);
   font-weight: 950;
   letter-spacing: -.04em;
+}
+
+img.agent-avatar {
+  object-position: center 28%;
 }
 
 .agent-avatar.large {
@@ -870,6 +882,16 @@ select:focus {
   gap: 32px;
 }
 
+.footer-logo {
+  display: block;
+  width: min(250px, 100%);
+  height: auto;
+  margin-bottom: 12px;
+  padding: 8px;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
 .footer h3 {
   margin: 0 0 12px;
 }
@@ -894,12 +916,7 @@ select:focus {
     grid-template-columns: 1fr;
   }
 
-  .contact-copy {
-    position: static;
-  }
-
-  .action-grid,
-  .agent-grid {
+  .action-grid {
     grid-template-columns: 1fr;
   }
 
@@ -914,16 +931,23 @@ select:focus {
 
 @media (max-width: 760px) {
   .links {
-    display: none;
+    width: 100%;
+    order: 3;
+    justify-content: center;
+    gap: 24px;
+    padding-top: 10px;
+    border-top: 1px solid var(--line);
   }
 
   .nav {
     flex-wrap: wrap;
     padding: 12px 0;
+    gap: 12px;
   }
 
   .phone-btn {
-    width: 100%;
+    min-height: 44px;
+    padding: 0 14px;
   }
 
   .hero {
@@ -954,6 +978,10 @@ select:focus {
     padding: 38px 18px 22px;
   }
 
+  .agent-grid {
+    grid-template-columns: 1fr;
+  }
+
   .about-hero {
     padding: 0 6px 24px;
   }
@@ -967,7 +995,12 @@ select:focus {
   }
 
   .agent-card {
-    min-height: auto;
+    min-height: 675px;
+  }
+
+  .owner-card-photo {
+    height: 320px;
+    object-position: center 22%;
   }
 
   .agent-avatar {
@@ -988,8 +1021,8 @@ select:focus {
 }
 
 @media (max-width: 460px) {
-  .brand-text strong {
-    font-size: 16px;
+  .brand img {
+    width: 165px;
   }
 
   h1 {
@@ -997,8 +1030,17 @@ select:focus {
   }
 
   .hero-card,
-  .contact-form,
+  .brokerage-details,
   .contact-copy {
     padding: 22px;
+  }
+
+  .company-license-grid,
+  .bio-license-list {
+    grid-template-columns: 1fr;
+  }
+
+  .bio-license-list strong {
+    grid-column: auto;
   }
 }
