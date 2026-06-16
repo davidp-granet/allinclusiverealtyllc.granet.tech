@@ -1,8 +1,5 @@
 All Inclusive Realty static placeholder site
 
-Upload the contents of this folder into:
-/var/www/allinclusiverealtyllc.granet.tech/
-
 Expected optional image files:
 assets/all-inclusive-realty-logo.jpeg
 assets/brianna_zyla_agent.png
