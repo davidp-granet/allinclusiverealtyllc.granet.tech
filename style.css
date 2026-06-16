@@ -19,6 +19,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 50px;
 }
 
 body {
@@ -834,6 +835,10 @@ img.agent-avatar {
 }
 
 @media (max-width: 760px) {
+  html {
+    scroll-padding-top: 100px;
+  }
+
   .links {
     width: 100%;
     order: 3;
@@ -919,6 +924,10 @@ img.agent-avatar {
 }
 
 @media (max-width: 460px) {
+  html {
+    scroll-padding-top: 70px;
+  }
+
   .brand img {
     width: 120px;
   }
