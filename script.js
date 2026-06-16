@@ -23,7 +23,7 @@ const agents = {
     ],
     actions: [
       { label: "Direct 603-553-7730", href: "tel:+16035537730" },
-      { label: "Email Sabrina", href: "mailto:Sabrina@allinclusiverealtyllc.com" }
+      { label: "Email Sabrina", href: "mailto:sabrina@allinclusiverealtyllc.com" }
     ]
   },
   "brianna-modal": {
@@ -41,7 +41,7 @@ const agents = {
     ],
     actions: [
       { label: "NH Office 603-516-7730", href: "tel:+16035167730" },
-      { label: "Contact Brokerage", href: "mailto:Sabrina@allinclusiverealtyllc.com" }
+      { label: "Contact Brokerage", href: "mailto:sabrina@allinclusiverealtyllc.com" }
     ]
   },
   "jana-modal": {
@@ -58,7 +58,7 @@ const agents = {
     ],
     actions: [
       { label: "NH Office 603-516-7730", href: "tel:+16035167730" },
-      { label: "Contact Brokerage", href: "mailto:Sabrina@allinclusiverealtyllc.com" }
+      { label: "Contact Brokerage", href: "mailto:sabrina@allinclusiverealtyllc.com" }
     ]
   }
 };
