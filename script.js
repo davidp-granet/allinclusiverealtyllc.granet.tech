@@ -22,7 +22,7 @@ const agents = {
       "FL Broker #BK3622634"
     ],
     actions: [
-      { label: "Direct 603-553-7730", href: "tel:+16035537730" },
+      { label: "Call 603-553-7730", href: "tel:+16035537730" },
       { label: "Email Sabrina", href: "mailto:sabrina@allinclusiverealtyllc.com" }
     ]
   },
@@ -40,8 +40,8 @@ const agents = {
       { label: "Background", items: ["Marketing", "Finance"] }
     ],
     actions: [
-      { label: "NH Office 603-516-7730", href: "tel:+16035167730" },
-      { label: "Contact Brokerage", href: "mailto:sabrina@allinclusiverealtyllc.com" }
+      { label: "Call 603-339-4799", href: "tel:+16033394799" },
+      { label: "Email Brianna", href: "mailto:brianna@allinclusiverealtyllc.com" }
     ]
   },
   "jana-modal": {
@@ -57,8 +57,8 @@ const agents = {
       { label: "Designations", items: ["SRS", "SFR", "RENE", "GREEN", "ABR"] }
     ],
     actions: [
-      { label: "NH Office 603-516-7730", href: "tel:+16035167730" },
-      { label: "Contact Brokerage", href: "mailto:sabrina@allinclusiverealtyllc.com" }
+      { label: "Call 603-566-0112", href: "tel:+16035660112" },
+      { label: "Email Jana", href: "mailto:jana@allinclusiverealtyllc.com" }
     ]
   }
 };
