@@ -11,7 +11,7 @@ const agents = {
     credentials: [
       { label: "Experience", summary: "25 years in real estate" },
       { label: "Licensed States", items: ["NH", "ME", "VT", "MA", "CT", "FL"] },
-      { label: "Designations", items: ["SRS", "SRES", "MRP", "ABR", "CRB", "RENE", "C2EX"] }
+      { label: "Designations", items: ["SRS", "SRES", "RENE", "MRP", "ABR", "CRB", "C2EX"] }
     ],
     licenses: [
       "NH Broker #053461",
@@ -31,17 +31,27 @@ const agents = {
     role: "Agent / REALTOR®",
     initials: "BZ",
     bio: [
-      "Brianna has been a licensed real estate agent since 2018 and has spent the past seven years helping clients navigate the exciting — and sometimes overwhelming — world of real estate. Whether buying a first home, selling a property, or exploring investment opportunities, she guides clients every step of the way.",
-      "With a background in business and education in Finance, Accounting, Marketing, Economics, and Management, Brianna brings a well-rounded, strategic approach to every transaction. Her goal is to make the process smooth, informed, and enjoyable."
+      "Hi there! I’ve been a licensed real estate agent since 2018 and have spent the past seven years helping clients navigate the exciting (and sometimes overwhelming) world of real estate. Whether you're buying your first home, selling a property, or looking for investment opportunities, I’m here to guide you every step of the way.",
+      "With a background in business and education in Finance, Accounting, Marketing, Economics, and Management, I bring a well - rounded, strategic approach to each transaction. My goal is to make the process smooth, informed, and—believe it or not—enjoyable!",
+      "Over the years, I’ve built a strong track record by staying proactive, responsive, and committed to my clients’ success. I pride myself on clear communication, expert guidance, and a genuine passion for helping people achieve their real estate goals.",
+      "Ready to get started? I’m here to answer your questions and guide you through every step. Let's connect and discuss how I can help you achieve your real estate goals.",
+      "Follow me on social media and check out my Zillow profile linked below to stay up to date with my latest listings and real estate updates!"
+      // "Brianna has been a licensed real estate agent since 2018 and has spent the past seven years helping clients navigate the exciting — and sometimes overwhelming — world of real estate. Whether buying a first home, selling a property, or exploring investment opportunities, she guides clients every step of the way.",
+      // "With a background in business and education in Finance, Accounting, Marketing, Economics, and Management, Brianna brings a well-rounded, strategic approach to every transaction. Her goal is to make the process smooth, informed, and enjoyable."
     ],
     credentials: [
       { label: "Experience", summary: "Licensed since 2018" },
-      { label: "Services", items: ["Buying", "Selling", "Investing"] },
-      { label: "Background", items: ["Marketing", "Finance"] }
+      { label: "Designations", items: ["RENE", "RSPS", "AWD"] }
     ],
     actions: [
       { label: "Call 603-339-4799", href: "tel:+16033394799" },
       { label: "Email Brianna", href: "mailto:brianna@allinclusiverealtyllc.com" }
+    ],
+    links: [
+      { label: "Facebook", href: "https://www.facebook.com/Briannazylarealtor" },
+      { label: "Instagram", href: "https://www.instagram.com/zyla_realestate/" },
+      { label: "LinkedIn", href: "https://www.linkedin.com/in/brianna-zyla-rene-rsps-84639214a" },
+      { label: "Zillow", href: "https://www.zillow.com/profile/bzylarealtor" },
     ]
   },
   "jana-modal": {
@@ -49,8 +59,11 @@ const agents = {
     role: "Associate Broker / REALTOR®",
     initials: "JC",
     bio: [
-      "Jana A. Coughlin is a well-established real estate agent serving Southern New Hampshire, known for her dedication, experience, and unwavering commitment to customer satisfaction. She puts clients first through strong communication and exceptional people skills.",
-      "A seasoned professional, Jana holds a Paralegal degree, helping clients better understand the legal aspects of buying and selling a home. Born in the Czech Republic, she studied business abroad and brings a multilingual, global perspective to her work."
+      "Jana A. Coughlin is a well - established real estate agent serving Southern New Hampshire, known for her dedication, experience, and unwavering commitment to customer satisfaction. She puts clients first by combining strong communication and exceptional people skills, guided by her motto: “Communication is #1—always going above and beyond.”",
+      "A seasoned professional, Jana holds a Paralegal degree, which allows her to help clients better understand the legal aspects of buying and selling a home. Born in the Czech Republic, she studied business abroad and brings a multilingual, global perspective to her work—an invaluable asset to her clients.",
+      "Jana’s drive and expertise are further strengthened by multiple professional certifications, including RENE (Real Estate Negotiation Expert), SRS (Seller Representative Specialist), SFR (Short Sale and Foreclosure Representative), ABR (Accredited Buyer’s Representative), and GREEN (specializing in energy efficiency and sustainable home practices)."
+      // "Jana A. Coughlin is a well-established real estate agent serving Southern New Hampshire, known for her dedication, experience, and unwavering commitment to customer satisfaction. She puts clients first through strong communication and exceptional people skills.",
+      // "A seasoned professional, Jana holds a Paralegal degree, helping clients better understand the legal aspects of buying and selling a home. Born in the Czech Republic, she studied business abroad and brings a multilingual, global perspective to her work."
     ],
     credentials: [
       { label: "Languages", items: ["Czech", "English"] },
@@ -152,6 +165,13 @@ function renderModal() {
   modalHead.append(renderAvatar(agent), identity);
 
   agent.bio.forEach((paragraph) => modalContent.append(createElement("p", "", paragraph)));
+
+  const linksContainer = createElement("p", 'agent-modal-links');
+  (agent.links ?? []).forEach((link) => {
+    linksContainer.innerHTML += `<a href=${link.href} target="_blank" rel="noopener noreferrer">${link.label}</a><br>`;
+  });
+  modalContent.append(linksContainer);
+
   modalContent.append(renderCredentials(agent));
 
   const licenses = renderLicenses(agent);
