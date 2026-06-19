@@ -57,7 +57,7 @@ const agents = {
   "jana-modal": {
     name: "Jana A. Coughlin",
     role: "Associate Broker / REALTOR®",
-    initials: "JC",
+    image: 'assets/jana-coughlin-cropped.jpg',
     bio: [
       "Jana A. Coughlin is a well - established real estate agent serving Southern New Hampshire, known for her dedication, experience, and unwavering commitment to customer satisfaction. She puts clients first by combining strong communication and exceptional people skills, guided by her motto: “Communication is #1—always going above and beyond.”",
       "A seasoned professional, Jana holds a Paralegal degree, which allows her to help clients better understand the legal aspects of buying and selling a home. Born in the Czech Republic, she studied business abroad and brings a multilingual, global perspective to her work—an invaluable asset to her clients.",
