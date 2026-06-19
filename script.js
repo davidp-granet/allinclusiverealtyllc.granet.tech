@@ -29,7 +29,7 @@ const agents = {
   "brianna-modal": {
     name: "Brianna Zyla",
     role: "Agent / REALTOR®",
-    initials: "BZ",
+    image: "assets/brianna-zyla-cropped.jpg",
     bio: [
       "Hi there! I’ve been a licensed real estate agent since 2018 and have spent the past seven years helping clients navigate the exciting (and sometimes overwhelming) world of real estate. Whether you're buying your first home, selling a property, or looking for investment opportunities, I’m here to guide you every step of the way.",
       "With a background in business and education in Finance, Accounting, Marketing, Economics, and Management, I bring a well - rounded, strategic approach to each transaction. My goal is to make the process smooth, informed, and—believe it or not—enjoyable!",
