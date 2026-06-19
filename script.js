@@ -145,6 +145,8 @@ function renderActions(agent) {
   return actions;
 }
 
+onCloseHash = '-';
+
 function renderModal() {
   const hash = window.location.hash.slice(1);
   const agent = agents[hash];
@@ -155,6 +157,8 @@ function renderModal() {
     document.body.classList.remove("modal-open");
     return;
   }
+
+  onCloseHash = hash.split('-')[0];
 
   modalHead.replaceChildren();
   modalContent.replaceChildren();
@@ -191,11 +195,13 @@ function renderModal() {
 window.addEventListener("hashchange", renderModal);
 window.addEventListener("keydown", (event) => {
   if (event.key === "Escape" && modal.classList.contains("is-open")) {
-    window.location.hash = "team";
+    window.location.hash = onCloseHash;
   }
 });
 modal.addEventListener("click", (event) => {
-  if (event.target === modal) window.location.hash = "team";
+  if (event.target === modal) {
+    window.location.hash = onCloseHash;
+  }
 });
 
 renderModal();
