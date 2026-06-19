@@ -131,11 +131,17 @@ function renderLicenses(agent) {
 
 function renderActions(agent) {
   const actions = createElement("div", "contact-strip");
-  agent.actions.forEach((action) => {
-    const link = createElement("a", "", action.label);
-    link.href = action.href;
-    actions.append(link);
-  });
+
+  const callAction = agent.actions[0];
+  const callLink = createElement("a", "btn primary", callAction.label);
+  callLink.href = callAction.href;
+  actions.append(callLink);
+
+  const emailAction = agent.actions[1];
+  const emailLink = createElement("a", "btn secondary", emailAction.label);
+  emailLink.href = emailAction.href;
+  actions.append(emailLink);
+
   return actions;
 }
 
