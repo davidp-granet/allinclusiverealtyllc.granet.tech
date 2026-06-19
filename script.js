@@ -58,7 +58,7 @@ const agents = {
     role: "Associate Broker / REALTOR®",
     image: 'assets/jana-coughlin-cropped.jpg',
     bio: `
-      <p><b>Jana A. Coughlin</b> is a well - established real estate agent serving Southern New Hampshire, known for her dedication, experience, and unwavering commitment to customer satisfaction. She puts clients first by combining strong communication and exceptional people skills, guided by her motto: <i>“Communication is #1—always going above and beyond.”</i></p>
+      <p><b>Jana A. Coughlin</b> is a well-established real estate agent serving Southern New Hampshire, known for her dedication, experience, and unwavering commitment to customer satisfaction. She puts clients first by combining strong communication and exceptional people skills, guided by her motto: <i>“Communication is #1—always going above and beyond.”</i></p>
       <p>A seasoned professional, Jana holds a Paralegal degree, which allows her to help clients better understand the legal aspects of buying and selling a home. Born in the Czech Republic, she studied business abroad and brings a multilingual, global perspective to her work—an invaluable asset to her clients.</p>
       <p>Jana’s drive and expertise are further strengthened by multiple professional certifications, including <b>RENE</b> (Real Estate Negotiation Expert), <b>SRS</b> (Seller Representative Specialist), <b>SFR</b> (Short Sale and Foreclosure Representative), <b>ABR</b> (Accredited Buyer’s Representative), and <b>GREEN</b> (specializing in energy efficiency and sustainable home practices).</p>
     `,
