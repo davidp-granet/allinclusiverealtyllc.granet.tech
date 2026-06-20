@@ -158,7 +158,7 @@ function renderModal() {
     return;
   }
 
-  onCloseHash = hash.split('-')[0];
+  onCloseHash = hash.split('-')[1];
   modal.querySelector(".close").href = '#' + onCloseHash;
 
   modalHead.replaceChildren();
