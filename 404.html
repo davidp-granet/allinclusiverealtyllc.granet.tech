@@ -28,24 +28,30 @@
 <body>
   <span>Error 404: Page not found.</span>
   <script>
-
-    const url = location.pathname;
-    const map = {
-      'sabrina': '/#about-sabrina',
-      'brianna': '/#about-brianna',
-      'jana': '/#about-jana'
-    }
-
-    for (const key in map) {
-      if (!Object.hasOwn(map, key)) continue;
-
-      if (url.includes(key)) {
-        location.replace(map[key]);
+    (function () {
+      const url = location.pathname;
+      const map = {
+        'sabrina': '/#about-sabrina',
+        'brianna': '/#about-brianna',
+        'jana': '/#about-jana'
       }
-    }
 
-    // Redirect to the homepage if the page is not found.
-    location.replace('/');
+      if (new URLSearchParams(window.location.search).get('debug') === 'true') {
+        debugger;
+      }
+
+      for (const key in map) {
+        if (!Object.hasOwn(map, key)) continue;
+
+        if (url.includes(key)) {
+          location.replace(map[key]);
+          return;
+        }
+      }
+
+      // Redirect to the homepage if the page is not found.
+      location.replace('/');
+    })();
   </script>
 </body>
 </html>
