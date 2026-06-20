@@ -3,13 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>All Inclusive Realty, LLC | 404 Page not found</title>
+  <title>All Inclusive Realty, LLC</title>
+  <style>
+    body {
+      animation: appear 2s;
+    }
+
+    @keyframes appear {
+      0% {
+        opacity: 0;
+      }
+
+      99% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  Error 404: Page not found.
+  <span>Error 404: Page not found.</span>
   <script>
+
+    const url = location.pathname;
+    const map = {
+      'sabrina': '/#about-sabrina',
+      'brianna': '/#about-brianna',
+      'jana': '/#about-jana'
+    }
+
+    for (const key in map) {
+      if (!Object.hasOwn(map, key)) continue;
+
+      if (url.includes(key)) {
+        location.replace(map[key]);
+      }
+    }
+
     // Redirect to the homepage if the page is not found.
-    window.location.href = '/';
+    location.replace('/');
   </script>
 </body>
 </html>
