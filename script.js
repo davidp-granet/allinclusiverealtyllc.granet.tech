@@ -1,5 +1,5 @@
 const agents = {
-  "sabrina-modal": {
+  "about-sabrina": {
     name: "Sabrina Zyla",
     role: "Owner / Broker of Record",
     image: "assets/sabrina-zyla-owner.png",
@@ -27,7 +27,7 @@ const agents = {
       { label: "Email Sabrina", href: "mailto:sabrina@allinclusiverealtyllc.com" }
     ]
   },
-  "brianna-modal": {
+  "about-brianna": {
     name: "Brianna Zyla",
     role: "Agent / REALTOR®",
     image: "assets/brianna-zyla-cropped.jpg",
@@ -53,7 +53,7 @@ const agents = {
       { label: "Zillow", href: "https://www.zillow.com/profile/bzylarealtor" },
     ]
   },
-  "jana-modal": {
+  "about-jana": {
     name: "Jana A. Coughlin",
     role: "Associate Broker / REALTOR®",
     image: 'assets/jana-coughlin-cropped.jpg',
