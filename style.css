@@ -81,6 +81,7 @@ a {
   font-weight: 800;
   color: var(--navy-dark);
   font-size: 15px;
+  white-space: nowrap;
 }
 
 .phone-btn,
