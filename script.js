@@ -176,7 +176,7 @@ function renderModal() {
 
   const linksContainer = createElement("p", 'agent-modal-links');
   (agent.links ?? []).forEach((link) => {
-    linksContainer.innerHTML += `<a href=${link.href} target="_blank" rel="noopener noreferrer">${link.label}</a><br>`;
+    linksContainer.innerHTML += `<a href=${link.href} target="_blank" rel="noopener">${link.label}</a><br>`;
   });
   if (agent.links) { modalContent.append(linksContainer); }
 
