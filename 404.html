@@ -33,7 +33,9 @@
       const map = {
         'sabrina': '/#about-sabrina',
         'brianna': '/#about-brianna',
-        'jana': '/#about-jana'
+        'jana': '/#about-jana',
+        'Client_Reviews': '/#client_reviews',
+        'review': '/#client_reviews',
       }
 
       if (new URLSearchParams(window.location.search).get('debug') === 'true') {
@@ -43,7 +45,7 @@
       for (const key in map) {
         if (!Object.hasOwn(map, key)) continue;
 
-        if (url.includes(key)) {
+        if (url.toLowerCase().includes(key.toLowerCase())) {
           location.replace(map[key]);
           return;
         }
