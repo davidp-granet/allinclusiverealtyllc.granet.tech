@@ -390,14 +390,14 @@ h1 span {
   color: var(--muted);
 }
 
-.company-license-grid {
+.client-reviews-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 12px;
   margin-top: 22px;
 }
 
-.company-license-grid div {
+.client-reviews-grid div {
   display: grid;
   gap: 4px;
   border: 1px solid var(--line);
@@ -406,11 +406,11 @@ h1 span {
   background: #f7faff;
 }
 
-.company-license-grid strong {
+.client-reviews-grid strong {
   color: var(--navy-dark);
 }
 
-.company-license-grid span {
+.client-reviews-grid span {
   color: var(--muted);
   font-weight: 950;
 }
@@ -951,7 +951,7 @@ img.agent-avatar {
     padding: 22px;
   }
 
-  .company-license-grid,
+  .client-reviews-grid,
   .bio-license-list {
     grid-template-columns: 1fr;
   }
