@@ -398,8 +398,9 @@ h1 span {
 }
 
 .client-reviews-grid div {
-  display: grid;
-  gap: 4px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
   border: 1px solid var(--line);
   border-radius: 14px;
   padding: 20px;
@@ -413,6 +414,12 @@ h1 span {
 .client-reviews-grid span {
   color: var(--muted);
   font-weight: 950;
+}
+
+.client-reviews-grid img {
+  --img-size: 25px;
+  width: var(--img-size);
+  height: var(--img-size);
 }
 
 /* =========================================================
