@@ -525,6 +525,20 @@ body.modal-open {
   font-weight: 900;
 }
 
+.air-video-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.air-video {
+  width: 560px;
+  max-width: 560px;
+  /* padding: 22px;
+  border: 1px solid #d7e3f2;
+  border-radius: 18px; */
+}
+
 .agent-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
