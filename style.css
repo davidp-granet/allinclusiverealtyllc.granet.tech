@@ -305,10 +305,6 @@ h1 span {
   background: #ffffff;
 }
 
-.team-section .about-hero {
-  margin-bottom: 32px;
-}
-
 .team-grid {
   max-width: 1120px;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -485,7 +481,7 @@ body.modal-open {
   text-align: center;
   padding: 0 24px 32px;
   border-bottom: 1px solid #d7e3f2;
-  margin-bottom: 26px;
+  margin-bottom: 32px;
 }
 
 .about-hero .mini {
