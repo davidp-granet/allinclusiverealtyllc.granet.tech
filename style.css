@@ -529,11 +529,15 @@ body.modal-open {
   display: flex;
   justify-content: center;
   margin-bottom: 32px;
+  /* Commented divider */
+  /* padding-bottom: 32px;
+  border-bottom: 1px solid #d7e3f2; */
 }
 
 .air-video {
   width: 560px;
   max-width: 560px;
+  /* Commented border around video */
   /* padding: 22px;
   border: 1px solid #d7e3f2;
   border-radius: 18px; */
