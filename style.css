@@ -666,9 +666,11 @@ img.agent-avatar {
   border-radius: 99px;
 }
 
-.agent-contact a {
+.agent-contact a,
+.agent-contact span
+{
   display: block;
-  color: #142033;
+  color: var(--ink);
   margin: 4px 0;
   font-size: 15px;
   text-decoration: none;
